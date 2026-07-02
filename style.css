@@ -1,15 +1,15 @@
 :root {
     /* Color Palette */
-    --brand-green: #a4d65e;     /* Primary button color */
-    --brand-purple: #4b2c73;    /* Header and navigation background */
-    --brand-dark: #333333;      /* Headings and primary text */
-    --text-grey: #666666;       /* Secondary text */
-    --bg-light: #ffffff;        /* Main background */
+    --brand-green: #a4d65e; /* Primary button color */
+    --brand-purple: #4b2c73; /* Header and navigation background */
+    --brand-dark: #333333; /* Headings and primary text */
+    --text-grey: #666666; /* Secondary text */
+    --bg-light: #ffffff; /* Main background */
     --white: #ffffff;
-    
+
     /* Typography */
     --font-main: 'Segoe UI', sans-serif;
-    
+
     /* max contend Width */
     --container-width: 1200px;
 }
@@ -22,10 +22,16 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* min Height 100% of Window */
     font-family: var(--font-main);
     color: var(--brand-dark);
     background-color: var(--bg-light);
     line-height: 1.6;
+}
+main {
+    flex: 1; /* Wenn genügend Inhalt vorhanden ist, befindet sich die Fußzeile am unteren Rand. */
 }
 
 /* Reusable Components */
@@ -53,14 +59,12 @@ body {
 .header {
     background-color: var(--brand-green);
     padding: 40px;
-        
 }
 
 /* 2. Hero LERA */
 .hero {
-    background-color: var(--brand-green); 
+    background-color: var(--brand-green);
     padding: 40px;
-    
 }
 
 /* 3. Tagesanbeot THOMAS */
@@ -72,19 +76,19 @@ body {
 
 /* 4. Vorstellung Firma THOMAS */
 .vorstellung {
-    background-color:  var(--brand-purple);
+    background-color: var(--brand-purple);
     color: var(--white);
     padding: 40px;
 }
 
 /* 5. Producte LERA */
-.produkte{
-    background-color:var(--brand-green);
+.produkte {
+    background-color: var(--brand-green);
     padding: 40px;
 }
 
 /* 6. Dienstleistungen LERA */
-.dienstleistungen{
+.dienstleistungen {
     background-color: var(--brand-green);
     padding: 40px;
 }
