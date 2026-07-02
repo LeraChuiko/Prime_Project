@@ -1,56 +1,104 @@
-/* General reset for better visualization */
-body {
+:root {
+    /* Color Palette */
+    --brand-green: #a4d65e;     /* Primary button color */
+    --brand-purple: #4b2c73;    /* Header and navigation background */
+    --brand-dark: #333333;      /* Headings and primary text */
+    --text-grey: #666666;       /* Secondary text */
+    --bg-light: #ffffff;        /* Main background */
+    --white: #ffffff;
+    
+    /* Typography */
+    --font-main: 'Segoe UI', sans-serif;
+    
+    /* max contend Width */
+    --container-width: 1200px;
+}
+
+/* Global Reset */
+* {
     margin: 0;
-    font-family: sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* 1. Header: Light Green */
+body {
+    font-family: var(--font-main);
+    color: var(--brand-dark);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+}
+
+/* Reusable Components */
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--brand-green);
+    color: var(--brand-dark); /* Text */
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hier können wir spielen */
+
+/* 1. Header LERA */
 .header {
-    background-color: #98FB98; /* Pale Green */
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
+    background-color: var(--brand-green);
+    padding: 40px;
+        
 }
 
-/* 2. Hero: Tiffany Blue */
+/* 2. Hero LERA */
 .hero {
-    background-color: #81D8D0; /* Tiffany Blue */
-    padding: 50px;
-    display: flex;
+    background-color: var(--brand-green); 
+    padding: 40px;
+    
 }
 
-/* 3. Trusted: Pink */
-.trusted {
-    background-color: #FFC0CB; /* Pink */
-    padding: 20px;
-}
-
-/* 4. Video: Violet */
-.video-section {
-    background-color: #EE82EE; /* Violet */
+/* 3. Tagesanbeot THOMAS */
+.tagesanbeot {
+    background-color: var(--brand-purple);
+    color: var(--white);
     padding: 40px;
 }
 
-/* 5. Features: Light Green */
-.features {
-    background-color: #98FB98;
+/* 4. Vorstellung Firma THOMAS */
+.vorstellung {
+    background-color:  var(--brand-purple);
+    color: var(--white);
     padding: 40px;
 }
 
-/* 6. Why Choose: Tiffany Blue */
-.why-choose {
-    background-color: #81D8D0;
+/* 5. Producte LERA */
+.produkte{
+    background-color:var(--brand-green);
     padding: 40px;
 }
 
-/* 7. Pricing: Pink */
-.pricing-section {
-    background-color: #FFC0CB;
+/* 6. Dienstleistungen LERA */
+.dienstleistungen{
+    background-color: var(--brand-green);
     padding: 40px;
 }
 
-/* 8. Footer: Violet */
+/* 7. Unsere Leasingpartner THOMAS */
+.partner {
+    background-color: var(--brand-purple);
+    color: var(--white);
+    padding: 40px;
+}
+
+/* 8. Footer: Thomas */
 .footer {
-    background-color: #EE82EE;
-    padding: 20px;
+    background-color: var(--brand-purple);
+    color: var(--white);
+    padding: 40px;
 }
