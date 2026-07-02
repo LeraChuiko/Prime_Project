@@ -32,6 +32,10 @@ body {
 }
 main {
     flex: 1; /* Wenn genügend Inhalt vorhanden ist, befindet sich die Fußzeile am unteren Rand. */
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
 }
 
 /* Reusable Components */
@@ -178,6 +182,7 @@ h1 {
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
+
 @media (max-width: 62rem) {
     .header {
         flex-direction: column;
@@ -250,19 +255,38 @@ h1 {
 }
 
 /* 3. Tagesanbeot THOMAS */
-.tagesanbeot {
+.offers {
     background-color: var(--brand-purple);
     color: var(--white);
     padding: 40px;
 }
+
+.offer-container {
+   border: 1px solid black;
+  display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr;*/
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  /*grid-template-columns: repeat(3, 1fr);*/
+  /*grid-template-rows: 1fr 2fr;*/
+  gap: 1rem;
+  padding: 40px;
+}
+
+.offer {
+  background-color: white;
+  border: 1px solid #dddddd;
+  padding: 1.5rem;
+  text-align: center;
+  /* margin-bottom: 1rem; */
+}
+
 
 /* 4. Vorstellung Firma THOMAS */
-.vorstellung {
+.introduction {
     background-color: var(--brand-purple);
     color: var(--white);
     padding: 40px;
 }
-
 /* 5. Producte LERA */
 .produkte {
     background-color: var(--brand-green);
