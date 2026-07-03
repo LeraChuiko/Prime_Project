@@ -266,32 +266,45 @@ h1 {
 
 /* 3. Tagesanbeot THOMAS */
 .offers {
-    background-color: var(--brand-purple);
-    color: var(--white);
+   /* background-color: var(--brand-purple);
+    color: var(--white);*/
     padding: 40px;
 }
 
 .offer-container {
-    border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1rem;
     padding: 40px;
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+ 
 }
 
 .offer {
     background-color: white;
-    border: 1px solid #dddddd;
     padding: 1.5rem;
     text-align: center;
 }
 
+button {
+  border-radius: 1rem;
+  border: 0.3rem solid color(gray); 
+}
+
 /* 4. Vorstellung Firma THOMAS */
 .introduction {
-    background-color: var(--brand-purple);
-    color: var(--white);
+   /* background-color: var(--brand-purple);
+    color: var(--white);*/
     padding: 40px;
+    background-color: #f4f4f4;
+    padding: 4rem 0;
 }
+
+.introduction ul {
+   padding: 0 2rem; 
+}
+
 /* 5. Producte LERA */
 .produkte {
     background-color: var(--brand-green);
@@ -383,14 +396,17 @@ h1 {
 
 /* 7. Unsere Leasingpartner THOMAS */
 .partner {
-    background-color: var(--brand-purple);
-    color: var(--white);
+   /* background-color: var(--brand-purple);
+    color: var(--white);*/
     padding: 40px;
+    background-color: #f4f4f4;
+    padding: 4rem 0;
 }
 
 /* 8. Footer: Thomas */
 .footer {
-    background-color: var(--brand-purple);
-    color: var(--white);
+    /*background-color: var(--brand-purple);*/
+    /*color: var(--white);*/
     padding: 40px;
+    text-align: center;
 }
