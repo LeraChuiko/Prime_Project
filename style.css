@@ -50,7 +50,6 @@ main {
     border: none;
     cursor: pointer;
     font-size: 0, 5rem;
-    /* font-family: inherit;*/
     text-align: center;
     margin-top: auto;
 
@@ -311,6 +310,25 @@ button {
     background-color: var(--brand-green);
     padding: 40px;
 }
+
+.products-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-items: center; 
+}
+
+.products-row img {
+    width: 100%; 
+    max-width: 150px; 
+    height: auto;
+}
+
+.produkte h2 {
+    margin-bottom: 2rem; 
+    color: var(--brand-purple);
+   
 
 /* 6. Dienstleistungen LERA */
 .dienstleistungen {
